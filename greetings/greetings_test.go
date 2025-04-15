@@ -6,7 +6,7 @@ import (
 )
 
 func TestHelloName(t *testing.T) {
-	name := "Gladys"
+	name := "Gladysc"
 	want := regexp.MustCompile(`\b` + name + `\b`)
 	msg, err := Hello("Gladys")
 	if !want.MatchString(msg) || err != nil {
