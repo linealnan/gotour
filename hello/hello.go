@@ -10,8 +10,10 @@ import (
 func main() {
 	log.SetPrefix("greeings: ")
 	log.SetFlags(0)
+
+	names := []string{"Gladys", "Samantha", "Darrin"}
 	// Get a greeting message and print it.
-	message, err := greetings.Hello("Gladys")
+	message, err := greetings.Hellos(names)
 
 	if err != nil {
 		log.Fatal(err)
